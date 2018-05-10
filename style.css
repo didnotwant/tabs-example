@@ -1,0 +1,27 @@
+.tabs-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-nav__tab {
+  padding: 10px;
+}
+
+.tabs-nav__tab--selected {
+  background-color: #f0f0f0;
+}
+
+.tabs-panel {
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.tabs-panel--hidden {
+  display: none;
+}
+
+.tabs-panel--selected {
+  display: block;
+}

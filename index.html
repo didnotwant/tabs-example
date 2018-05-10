@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+      GitHub PR tabs semantic and accessible example
+    </title>
+  </head>
+  <body>
+    <div role="tablist">
+      <h1>
+        GitHub PR tabs semantic and accessible example
+      </h1>
+      <nav class="tabs-nav">
+        <h2>PR sections navigation</h2>
+        <ul class="tabs-nav__list">
+          <li><a class="tabs-nav__tab" href="#conversation" role="tab">Conversation</a></li>
+          <li><a class="tabs-nav__tab" href="#commits" role="tab">Commits</a></li>
+          <li><a class="tabs-nav__tab" href="#files-changed" role="tab">Files changed</a></li>
+        </ul>
+      </nav>
+
+      <section id="conversation" role="tabpanel" class="tabs-panel">
+        <h2>Conversation</h2>
+        ... other elements like comments, not relevant in this case
+      </section>
+      <section id="commits" role="tabpanel" class="tabs-panel">
+        <h2>Commits</h2>
+        ... other elements like commits list, not relevant in this case
+      </section>
+      <section id="files-changed" role="tabpanel" class="tabs-panel">
+        <h2>Files changed</h2>
+        ... other elements like changed files list, not relevant in this case
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
